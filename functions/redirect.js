@@ -4,7 +4,7 @@ exports.handler = async (event) => {
     return {
       statusCode: 302,
       headers: {
-        Location: `/login/?redirect=${path}`,
+        Location: `/404.html`,
       },
     };
   };
