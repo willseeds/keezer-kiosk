@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add a Beer</title>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    
+    <nav>
+      <script src="../../header.js"></script>
+      <script src="../adminheader.js"></script>
+    </nav>
+
+    <main>
+
+      <div style="text-align:center;">
+        <table cellpadding="3" cellspacing="1"  style="box-sizing: border-box; vertical-align: bottom; position:relative; display: inline-table; width:90%; background:none; border: 1px solid; table-layout: fixed; ">
+          <tr>
+            <td width="90%" style="vertical-align: top; overflow:hidden; ">
+              <div style="text-align:center;">
+                <p>
+                  <h1>Add a Beer</h1>
+                  <p>
+                    <form name="addbeer" onsubmit="" method="POST">
+                      <label for="beername">Beer Name:</label><br/>
+                      <input type="text" name="beername" id="beername"><br/><br/>
+                      <label for="abv">ABV %:</label><br/>
+                      <input type="text" name="abv" id="abv"><br/><br/>
+                      <label for="datebrewed">Date Brewed:</label><br/>
+                      <input type="date" name="datebrewed" id="datebrewed"><br/><br/>
+                      <label for="stylename">Style Name:</label><br/>
+                      <input type="text" name="stylename" id="stylename"><br/><br/>
+                      <label for="IBU">IBU:</label><br/>
+                      <input type="text" name="ibu" id="IBU"><br/><br/>
+                      <label for="comments">Comments:</label><br/>
+                      <textarea rows="10" cols="60" name="comments" id="comments"></textarea><br/><br/>
+                      <input type="submit" name="submit" value="Submit"><br/>
+                    </form>
+                  </p>
+                </p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      
+    </main>
+
+    <footer>
+      <script src="../../footer.js"></script>
+    </footer>  
+  </body>
+</html>
