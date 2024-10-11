@@ -14,6 +14,11 @@
     <main>
       <h1>Login</h1>
       <p>This is where you gain access to the "/pro/" area.</p>
+      <form action="/.netlify/functions/login" method="POST">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+        <button type="submit">Get access</button>
+      </form>
     </main>
   </body>
 </html>
