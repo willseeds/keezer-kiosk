@@ -1,2 +1,16 @@
 [build]
   publish = "public"
+
+  [[redirects]]
+  from = "/pro/*"
+  status = 200
+  force = true
+  conditions = {Role = ["pro"]}
+
+[[redirects]]
+  from = "/pro/*"
+  to = "/login/"
+  status = 302
+  force = true
+
+  
