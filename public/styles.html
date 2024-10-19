@@ -2,9 +2,6 @@
 <html lang="en">
   <head>
     <title>Style List</title>
-
-    <script type="text/javascript" src="./functions/styles.js"></script>
-
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
@@ -41,21 +38,7 @@
                                   </tr>
                                 </thead>
                                  <tbody>
-                                  <script type="text/javascript">
-                                    import { turso } from "@/lib/turso";
-
-                                    export default async function Page() {
-                                      const { rows } = await turso.execute("SELECT * FROM stylelist order by stylecolor ASC");
-                                    
-                                      return (
-                                        <ul>
-                                          {rows.map((row) => (
-                                            <li key={row.id}>{row.id}</li>
-                                          ))}
-                                        </ul>
-                                      );
-                                    }
-                                  </script>
+                                  <script type="text/javascript" src="./functions/styles.js"></script>
                                 </tbody>
                               </table>
                           </div>  
