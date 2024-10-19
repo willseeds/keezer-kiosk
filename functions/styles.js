@@ -7,4 +7,4 @@ const client = createClient({
 
 const result = await client.execute("SELECT * FROM stylelist order by stylecolor ASC");
 
-console.log("Styles:", result.rows);
+console.log("Stylelist:", result.rows);
