@@ -1,0 +1,1 @@
+await turso.execute("SELECT * FROM stylelist order by stylecolor ASC");
